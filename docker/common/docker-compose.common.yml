@@ -1,0 +1,3 @@
+name: ${ENV:?error}
+include:
+  - ../common/docker-compose.network.yml

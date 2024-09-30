@@ -1,0 +1,5 @@
+services:
+  wordpress-dev:
+    extends:
+      file: docker-compose.base.yml
+      service: wordpress-dev

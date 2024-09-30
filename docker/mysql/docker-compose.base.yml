@@ -1,0 +1,17 @@
+include:
+  - path: ../common/docker-compose.common.yml
+    env_file:
+        - ../env-files/.env.${ENV:?error}
+
+services:
+  mysql:
+    image: mysql:9.0
+    container_name: ${ENV:?error}_mysql
+    restart: always
+    env_file:
+      - ../env-files/.env.${ENV}
+      - ../env-files/mysql.env.${ENV}
+    ports:
+      - ${EXPOSED_PORT:?error}:3306
+    networks:
+      - internal

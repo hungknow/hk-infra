@@ -1,0 +1,7 @@
+networks:
+  public:
+    name: ${DOCKER_NETWORK_NAME_PUBLIC:?error}
+    external: true
+  internal:
+    name: ${DOCKER_NETWORK_NAME_INTERNAL:?error}
+    external: true

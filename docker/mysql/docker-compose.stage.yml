@@ -1,0 +1,7 @@
+name: ${ENV:?error}
+
+services:
+  mysql:
+    extends:
+      file: docker-compose.base.yml
+      service: mysql

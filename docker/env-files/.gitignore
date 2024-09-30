@@ -1,0 +1,2 @@
+*.env.hk_stage
+!.env.hk_stage
