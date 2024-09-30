@@ -1,0 +1,2 @@
+- Install Postgres
+- Install Timescale plugin [Link](https://docs.timescale.com/self-hosted/latest/install/installation-linux/)
